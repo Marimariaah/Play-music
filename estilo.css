@@ -18,13 +18,12 @@ body * {
 
 #app {
     display: grid;
-    grid-template-columns: max-content;
+    grid-template-columns: max-content max-content;
     grid-template-areas:
         'A B'
         'A C';
 
     gap: 32px;
-
     place-content: center;
     height: 100vh;
 }
@@ -53,18 +52,20 @@ body * {
 
 #player-2 {
     grid-area: B;
+    height: fit-content;
 }
 
 #player-2 .wrapper {
     display: flex;
     align-items: center;
+    flex-direction: column;
     gap: 20px;
     width: 350px;
 }
 
 #player-2 img {
-    width: 90px;
-    height: 90px;
+    width: 84px;
+    height: 84px;
     object-fit: cover;
     border-radius: 6px;
     flex-shrink: 0;
@@ -94,13 +95,11 @@ body * {
 
     align-items: center;
     gap: 28px;
-
 }
 
 
 .info {
     color: #E1E1E6;
-    gap: 9.6px;
 }
 
 .info h1 {
@@ -118,8 +117,12 @@ body * {
     display: flex;
     justify-content: space-between;
     margin-top: 28px;
+    width: 100%;
 }
 
+.horizontal .controls {
+    padding-inline: 58px;
+}
 
 .track {
     margin-top: 28px;
