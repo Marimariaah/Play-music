@@ -124,6 +124,10 @@ body * {
     padding-inline: 58px;
 }
 
+.track-time-2 {
+    width: 80%;
+}
+
 .track {
     margin-top: 28px;
     position: relative;
@@ -145,7 +149,7 @@ body * {
 .track::after {
     content: '';
     height: 6px;
-    width: 80%;
+    width: 10%;
     display: block;
 
     background-color: #d9d9d9;
